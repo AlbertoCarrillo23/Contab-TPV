@@ -1,0 +1,134 @@
+<!--Página de inicio de la APP-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Metas -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>Contab-TPV</title>
+      <meta name="author" content="Alberto Carrillo Cervera">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <script src="js/custom.js"></script>
+   </head>
+   <body onload="comprobarCookie()" class="main-layout" ondblclick="comprobarCookie()">
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <header>
+         <div class="header_bg">
+            <div class="header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html"><h1 id="titulopropio">Contab-TPV</h1></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <ul class="costomer">
+                           <li><a href="#"><span>Llámanos: </span>698741235</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-6">
+                        <div class="text-bg">
+                           <h1>¡El secreto está en el ahorro!</h1>
+							<p>
+								La solución humilde para tener siempre la contabilidad de tu negocio al día. Simple, intuitiva y amigable, es decir, apta para todo tipo de usuarios.</br>
+								¡Di adiós a los papeles y a las pérdidas de tiempo!
+							</p>
+                           <a href="inicioSesion.html">Iniciar Sesión</a>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="text-img">
+                           <figure><img src="images/logo.png" /></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-body">
+                  <div class="notice d-flex justify-content-between align-items-center">
+                     <div class="cookie-text col-12">En nuestra web usuamos cookies para mejorar su experiencia. Por favor, acepte nuesras cookies para poder brindarle
+                        una experiencia completa. Para más información pulse <a href="legalidad.html">aquí</a></div>
+
+                  </div>
+                  <div class="buttons row justify-content-center">
+                     <a href="#" class="btn btn-success btn-sm col-3" onclick="crearCookie()" data-dismiss="modal">Aceptar</a>
+                     <a href="#" class="btn btn-secondary btn-sm col-3 offset-2" onclick="rechazarCookie()" data-dismiss="modal">Rechazar</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script>
+         function comprobarCookie() {
+            var cookie = document.cookie.replace(/(?:(?:^|.*;\s*)aceptada\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+            if (cookie != "") {
+
+               $(document).ready(function() {
+                  $('#cookieModal').modal('hide');
+               });
+
+
+            } else {
+               $(document).ready(function() {
+                  $('#cookieModal').modal({ backdrop: 'static', keyboard: false });
+                  $('#cookieModal').modal('show');
+               });
+
+            }
+         }
+
+         function crearCookie(){
+
+            document.cookie = "aceptada=1; max-age=3153600000; path=/";
+
+            $(document).ready(function() {
+               $('#cookieModal').modal('hide');
+            });
+         }
+
+         function rechazarCookie() {
+
+            $(document).ready(function () {
+               $('#cookieModal').modal('hide');
+            });
+         }
+      </script>
+   </body>
+</html>
+

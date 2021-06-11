@@ -1,0 +1,246 @@
+/*Alberto Carrillo Cervera*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: mediumseagreen;
+}
+
+body{
+    width: 1260px;
+    font-family: "Segoe UI Black";
+    margin: 100px auto 20px;
+    background-color: lightgreen;
+    color: black;
+    /*padding: 25px;*/
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#imglogo{
+    float: left;
+    margin: 50px 0 0 50px;
+}
+
+#titulo{
+    float: left;
+    font-size: 90px;
+    margin-left: 250px;
+    font-family: Impact;
+    margin-top: 50px;
+}
+
+.formreg{
+    margin: 50px 0 50px 50px;
+}
+
+#forminicio{
+    clear: left;
+    padding: 30px 0 20px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#userimg{
+    width: 100%;
+    height: auto;
+}
+
+#datosuser{
+    margin-left: 50px;
+}
+
+#imguser{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 200px;
+}
+
+nav{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.buscador{
+    margin: 35px 0px 0px 15px;
+    padding: 0px 0px 25px 10px;
+    width: 600px;
+}
+
+ol li{
+    margin-left: 300px;
+    line-height: 50px;
+}
+
+hr{
+    width: 800px;
+    margin: 0 auto;
+    border-color: black;
+}
+
+#forminicio{
+    font-size: 25px;
+    margin-left: 280px;
+}
+
+#forminicio fieldset{
+    width: 700px;
+    padding: 20px 20px 20px 135px;
+    background-color: mediumseagreen;
+}
+
+#forminicio input[type="text"]{
+    width: 400px;
+}
+
+#forminicio input[type="password"]{
+    width: 400px;
+}
+
+#forminicio input[type="submit"]{
+    margin-top: 15px;
+}
+
+#forminicio input[type="button"]{
+    margin: 15px 0 0 27px;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 25px;
+    width: 230px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+nav li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+nav li a:hover{
+    color: black;
+}
+
+nav li:hover{
+    background-color: mediumseagreen;
+}
+
+a{
+    color: black;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.mostrar{
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.container ol li{
+    list-style-type: none;
+}
+
+.addgrl{
+    font-size: 27px;
+    margin: 50px 0 0 245px;
+    width: 760px;
+    background-color: mediumseagreen;
+    padding: 25px;
+    border: 3px dashed black;
+}
+
+.addgrl input[type="text"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.addgrl input[type="number"]{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.addgrl select{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.addgrl label{
+    margin-top: 15px;
+}
+
+.modgrl{
+    text-align: center;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.btmod{
+    margin-top: 35px;
+    text-align: center;
+}
+
+.col-5{
+    margin: 15px;
+}
+
+.col-auto{
+    margin: 15px;
+}
+
+fieldset{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    width: 100%;
+    background-color: seagreen;
+    border-top: 3px solid black;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.logopie{
+    margin: 15px 0 0 350px;
+}
+
+.textopie{
+    margin-right: 100px;
+}
+
+.separador{
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+
+/*----------Cookies----------*/
+.container {
+    padding: 2rem 0rem;
+}
+
+.modal-dialog {
+    margin-top: 0rem;
+    max-width: 100%;
+}
+.modal-content {
+    border-radius: 0rem;
+}
+.btn {
+    margin: 0.2rem;
+}
+
+
